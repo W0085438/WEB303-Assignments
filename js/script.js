@@ -1,8 +1,7 @@
 // WEB303 Assignment 2
 // Adam Campeau (0085438)
 
-//let xhr = new XMLHttpRequest;
-//let xhrObjectResponse;
+
 
 $("document").ready(function() {
 	$("a#vprospect").click(function() {
