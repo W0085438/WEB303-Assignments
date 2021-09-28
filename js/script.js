@@ -5,7 +5,7 @@
 
 $("document").ready(function() {
 	$("a#vprospect").click(function() {
-		$("#solution").load("prospect.html").fadeIn(500);
+		$("#solution").load("prospect.html").hide().fadeIn(500);
 	})
 	$("a#vconvert").click(function() {
 		$("#solution").load("convert.html");
