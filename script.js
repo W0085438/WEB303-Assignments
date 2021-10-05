@@ -13,7 +13,12 @@ $(function usingJson() {
 });
 
 $(function usingAjax() {
-	$.ajax({url: "team.json", success: function(data){
+	$.ajax({url: "team.json", 
+	beforeSend: function( xhr ) {
+		var beforeText = $("<p></p>").text("Loading...");
+		$(`div#team`).append(beforeText);
+	},
+	success: function(data){
 		$.each(data.teammembers, function(index, value){
 			var memName = $("<h2></h2>").text(value.name); 
 			var memTitle = $("<h4></h4>").text(value.title);
