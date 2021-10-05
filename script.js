@@ -14,11 +14,16 @@ $(function usingJson() {
 
 $(function usingAjax() {
 	$.ajax({url: "team.json", 
-	beforeSend: function( xhr ) {
+	beforeSend: function() {
 		var beforeText = $("<p></p>").text("Loading...");
 		$(`div#team`).append(beforeText);
 	},
+	error: function(){
+		
+	},
+	timeout: 5000,
 	success: function(data){
+		$(`div#team`).empty();
 		$.each(data.teammembers, function(index, value){
 			var memName = $("<h2></h2>").text(value.name); 
 			var memTitle = $("<h4></h4>").text(value.title);
