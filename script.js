@@ -7,13 +7,13 @@ class ContentCard {
     id;
     title;
     description;
-    categoryType;
+    type;
 
     constructor (id, title, description, categoryType) {
         this.id = id;
         this.title = title;
         this.description = description;
-        this.categoryType = categoryType;
+        this.type = type;
     };
 
     updateContent = function(title, description, categoryType) {
@@ -24,8 +24,12 @@ class ContentCard {
         }
     };
 
-    toString(updateContent) {
-        return
+    toString() {
+        return `<div id="content-${this.id}"
+                <h4>${this.title}</h4>
+                <p>${this.description}</p>
+                <div>${this.type}</div>
+                </div>`
     };
 }
 
