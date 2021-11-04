@@ -27,16 +27,44 @@ class ContentCard {
     };
 }
 
-const uno = new ContentCard (
-    0,
-    "Uno",
-    "Microcontroller",
-    "Entry level"
-);
-
+const cards = [
+    new ContentCard (
+        0,
+        "UNO",
+        "Microcontroller",
+        "Entry level"
+    ),
+    new ContentCard (
+        1,
+        "MEGA 2560",
+        "Microcontroller",
+        "Entry level +"
+    ),
+    new ContentCard (
+        2,
+        "DUE",
+        "Microcontroller",
+        "Intermediate"
+    ),
+    new ContentCard (
+        3,
+        "MKR ZERO",
+        "Microcontroller",
+        "Intermediate"
+    ),
+    new ContentCard (
+        4,
+        "LEONARDO",
+        "Microcontroller",
+        "Entry level +"
+    )
+]
 
 $(document).ready(function(){
     // your code here
+    for (const property in cards){
+        
+    }
 
 });
 
