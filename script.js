@@ -9,18 +9,18 @@ class ContentCard {
     description;
     type;
 
-    constructor (id, title, description, categoryType) {
+    constructor (id, title, description, type) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.type = type;
     };
 
-    updateContent = function(title, description, categoryType) {
-        if(title || description || categoryType != null){
+    updateContent = function(title, description, type) {
+        if(title || description || type != null){
         this.title = title;
         this.description = description;
-        this.categoryType = categoryType
+        this.type = type
         }
     };
 
