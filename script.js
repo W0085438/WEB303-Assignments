@@ -17,13 +17,15 @@ class ContentCard {
     };
 
     updateContent = function(title, description, categoryType) {
+        if(title || description || categoryType != null){
         this.title = title;
         this.description = description;
-        this.categoryType = categoryType;
+        this.categoryType = categoryType
+        }
     };
 
-    toString() {
-        return 
+    toString(updateContent) {
+        return
     };
 }
 
