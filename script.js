@@ -27,7 +27,7 @@ class ContentCard {
     };
 }
 
-const cards = [
+const controllers = [
     new ContentCard (
         0,
         "UNO",
@@ -62,8 +62,8 @@ const cards = [
 
 $(document).ready(function(){
     // your code here
-    for (const property in cards){
-        
+    for (const controller in controllers){
+        $('#content-list').append(ContentCard.toString());
     }
 
 });
