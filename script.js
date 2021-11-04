@@ -25,7 +25,7 @@ class ContentCard {
     };
 
     toString() {
-        return `<div id="content-${this.id}"
+        return `<div id="content-${this.id}">
                 <h4>${this.title}</h4>
                 <p>${this.description}</p>
                 <div>${this.type}</div>
