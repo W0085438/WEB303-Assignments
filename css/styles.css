@@ -103,10 +103,6 @@ img {
 	padding-top: 25px;
 }
 
-.inactive {
-	display:none;
-}
-
 .tab-list {
 	
 	color: green;
@@ -118,7 +114,6 @@ img {
 .tab-list a {
 	width: 20%;
 	color: white;
-	font-size: 17px;
 	padding: 10px;
 }
 
@@ -149,7 +144,7 @@ img {
 .tab-panel.active > p {
 	margin-left: 60px;
 	color: white;
-	width: 60%;
-	font-size: 1.5em;
+	width: 100%;
+	font-size: 2em;
 }
 
