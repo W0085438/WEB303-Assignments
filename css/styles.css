@@ -19,6 +19,11 @@
 	text-decoration: none;
 }
 
+a:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: 500ms;
+}
+
 #container {
 	max-width: 1200px;
 	min-width: 875px;
@@ -30,6 +35,8 @@ button {
 	margin-bottom: 10px;
 	height: 40px;
 	padding-top: 5px;
+	background-color: lightgreen;
+	border-radius: 0px 10px 10px 10px;
 }
 
 #col-1 {
