@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'saira_condensedthin';
+    src: url('sairacondensed-thin-webfont.woff2') format('woff2'),
+         url('sairacondensed-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+	
+* { 
+	font-family: 'saira_condensedregular', sans-serif; 
+}
+
+* ul {
+	list-style: none;
+}
+
+* a {
+	text-decoration: none;
+}
+
+#container {
+	max-width: 1200px;
+	min-width: 875px;
+}
+
+button {
+	width: 100%;
+	border: none;
+	margin-bottom: 10px;
+	height: 40px;
+	padding-top: 5px;
+}
+
+#col-1 {
+	width: 25%;
+	float: right;
+	padding-right: 80px;
+	padding-top: 100px;
+}
+
+#col-1 ul {
+	margin: 0;
+}
+
+#main {
+	width: 70%;
+}
+
+#main p {
+	font-size: 0.7em;
+	padding-left: 45px;
+}
+
+img {
+	padding: 40px;
+	padding-bottom: 10px;
+	object-fit: cover;
+	width: 80%;
+}
+
+.accordion-panel {
+	display:none;
+	text-align: center;
+	padding: 25px;
+	background-color: black;
+}
+
+.accordion-panel p {
+	background-color: black;
+	color: white;
+	height: 50px;
+	margin: 0px;
+	padding-top: 25px;
+}
+
+.inactive {
+	display:none;
+}
+
+.tab-list {
+	
+	color: green;
+	background-color: green;
+	width: 50%;
+	border: none;
+	border-radius: 0px 12px 12px 0px;
+}
+.tab-list a {
+	width: 20%;
+	color: white;
+	padding: 15px 16px;
+	font-size: 17px;
+}
+
+.tab-list li {
+	display: inline-block;
+	border-style: solid;
+	
+}
+
+#tabs {
+	border-style: solid;
+	background-color: black;
+}
+
+.tab-panel {
+	display: none;
+}
+
+.tab-panel.active {
+	display: block;
+}
+
+.tab-panel.active > p {
+	margin-left: 60px;
+	color: white;
+	width: 60%;
+	font-size: 1.5em;
+}
+
