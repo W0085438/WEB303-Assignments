@@ -20,6 +20,8 @@ $(document).ready(function(){
 				.slideToggle();
 			}
 		})	 */	
+
+		//Could not for the life of me get this to work...
 		
 	});
 	
