@@ -12,6 +12,10 @@ $(document).ready(function(){
 			.next('.accordion-panel') 
 			
 			.slideToggle();
+
+		
+			
+		//Could not for the life of me get this to work...
 		
 		/* $('.accordion-panel').each(function( index ) {
 			if(!$(this).hasClass(' .active')) {
@@ -21,7 +25,7 @@ $(document).ready(function(){
 			}
 		})	 */	
 
-		//Could not for the life of me get this to work...
+		
 		
 	});
 	
