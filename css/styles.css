@@ -23,9 +23,15 @@ html {
 	text-decoration: none;
 }
 
+body {
+	margin-left: 200px;
+}
+
 #title-bar p {
 	padding-left: 20px;
-	letter-spacing: 1.5em;
+	letter-spacing: 1.2em;
+	font-size: 1.8em;
+	text-align: right;
 }
 
 a:hover {
@@ -52,9 +58,9 @@ button {
 
 #col-1 {
 	width: 25%;
-	float: right;
-	padding-right: 80px;
-	padding-top: 100px;
+	float: left;
+	padding-left: 35px;
+	padding-top: 50px;
 }
 
 #col-1 ul {
@@ -62,19 +68,21 @@ button {
 }
 
 #main {
-	width: 70%;
+	width: 50%;
+	float: left;
 }
 
 #main p {
 	font-size: 0.7em;
 	padding-left: 45px;
+	text-align: right;
 }
 
 img {
-	padding: 40px;
-	padding-bottom: 10px;
 	object-fit: cover;
-	width: 80%;
+	width: 100%;
+	opacity: 90%;
+	box-shadow: 6px 7px rgba(0,0,0,0.1);
 }
 
 .accordion-panel {
@@ -121,6 +129,11 @@ img {
 #tabs {
 	border-style: solid;
 	background-color: black;
+}
+
+#pipe {
+	background-color: white;
+	height: 5px;
 }
 
 .tab-panel {
