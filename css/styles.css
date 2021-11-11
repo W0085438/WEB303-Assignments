@@ -23,6 +23,11 @@ html {
 	text-decoration: none;
 }
 
+#title-bar p {
+	padding-left: 20px;
+	letter-spacing: 1.5em;
+}
+
 a:hover {
 	background-color: rgba(0, 0, 0, 0.5);
 	transition: 500ms;
@@ -42,6 +47,7 @@ button {
 	padding-top: 5px;
 	background-color: lightgreen;
 	border-radius: 10px 10px 0px 0px;
+	letter-spacing: 0.5em;
 }
 
 #col-1 {
