@@ -35,7 +35,7 @@ body {
 }
 
 a:hover {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	transition: 500ms;
 }
 
@@ -117,8 +117,8 @@ img {
 .tab-list a {
 	width: 20%;
 	color: white;
-	padding: 15px 16px;
 	font-size: 17px;
+	padding: 10px;
 }
 
 .tab-list li {
@@ -129,7 +129,7 @@ img {
 
 #tabs {
 	border-style: solid;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.85);
 }
 
 #pipe {
