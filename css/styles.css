@@ -25,6 +25,7 @@ a:hover {
 }
 
 #container {
+	width: auto;
 	max-width: 1200px;
 	min-width: 875px;
 }
@@ -32,11 +33,11 @@ a:hover {
 button {
 	width: 100%;
 	border: none;
-	margin-bottom: 10px;
+	margin-top: 10px;
 	height: 40px;
 	padding-top: 5px;
 	background-color: lightgreen;
-	border-radius: 0px 10px 10px 10px;
+	border-radius: 10px 10px 0px 0px;
 }
 
 #col-1 {
@@ -71,6 +72,7 @@ img {
 	text-align: center;
 	padding: 25px;
 	background-color: black;
+	border-radius: 0px 0px 10px 10px;
 }
 
 .accordion-panel p {
