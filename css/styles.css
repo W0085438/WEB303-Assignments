@@ -6,6 +6,10 @@
     font-style: normal;
 
 }
+
+html {
+	background-color: rgba(153, 255, 153, 0.3);
+}
 	
 * { 
 	font-family: 'saira_condensedregular', sans-serif; 
