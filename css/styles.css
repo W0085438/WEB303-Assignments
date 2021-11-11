@@ -54,6 +54,7 @@ button {
 	background-color: lightgreen;
 	border-radius: 10px 10px 0px 0px;
 	letter-spacing: 0.5em;
+	box-shadow: 6px 8.5px rgba(0,0,0,0.2);
 }
 
 #col-1 {
@@ -82,19 +83,19 @@ img {
 	object-fit: cover;
 	width: 100%;
 	opacity: 90%;
-	box-shadow: 6px 7px rgba(0,0,0,0.1);
+	box-shadow: 6px 7px rgba(0,0,0,0.2);
 }
 
 .accordion-panel {
 	display:none;
 	text-align: center;
 	padding: 25px;
-	background-color: black;
+	background-color: rgba(0,0,0,0.7);
 	border-radius: 0px 0px 10px 10px;
+	box-shadow: 6px 7px rgba(0,0,0,0.2);
 }
 
 .accordion-panel p {
-	background-color: black;
 	color: white;
 	height: 50px;
 	margin: 0px;
@@ -128,7 +129,7 @@ img {
 
 #tabs {
 	border-style: solid;
-	background-color: black;
+	background-color: rgba(0,0,0,0.8);
 }
 
 #pipe {
