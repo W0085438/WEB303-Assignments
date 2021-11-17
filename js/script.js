@@ -1,38 +1,40 @@
-$(function () {
-    $('#photo-viewer').photoViewer().show().on('click', '.photo-frame', function (e) {
-        var $content = $(this).clone().find('img').css({
-            marginLeft: 0,
-            marginTop: 0,
-            width: '100%',
-            height: 'auto'
-        });
-        //modal code goes here
-		var modal = (function() {
-		var $window = $(window);
-		var $modal = $('<div class="modal"/>');
-		var $content = $('<div class=“modal-content"/>');
-		var $close = $('<button role=“button” class=“modal-close">close</button>');
-		$modal.append($content, $close);
-		});
+$(document).ready(function(){
 
-        $(function () {// Remove modal content from page and store in $content
-            $('.photo-viewer').show();
-            var $content = $('.photo-frame').detach();
-        
-            var modal = new Modal();
-            // Click handler calls open() method of modal object
-        
-            $('.photo-frame').on('click', function () {
-                modal.open({
-                    content: $content,
-                    width: 340,
-                    height: 300
+    $(function () {
+        $('#photo-viewer').photoViewer().show().on('click', '.photo-frame', function (e) {
+            var $content = $(this).clone().find('img').css({
+                marginLeft: 0,
+                marginTop: 0,
+                width: '100%',
+                height: 'auto'
+            });;
+            //modal code goes here
+            var modal = (function() {
+            var $window = $(window);
+            var $modal = $('<div class="modal"/>');
+            var $content = $('<div class=“modal-content"/>');
+            var $close = $('<button role=“button” class=“modal-close">close</button>');
+            $modal.append($content, $close);
+            });
+
+            $(function () {// Remove modal content from page and store in $content
+                $('.photo-viewer').show();
+                var $content = $('.photo-frame').detach();
+            
+                var modal = new Modal();
+                // Click handler calls open() method of modal object
+            
+                $('.photo-frame').on('click', function () {
+                    modal.open({
+                        content: $content,
+                        width: 340,
+                        height: 300
+                    });
                 });
             });
-        });
 
+        });
     });
-});
 
 class Modal {
      $window = $(window);
@@ -82,4 +84,4 @@ class Modal {
     }
 }
 
-
+});

@@ -1,5 +1,11 @@
+
+
 .modal {
     position: absolute;
     z-index: 1000;
     display: none;
+    background-color:lightskyblue;
+    padding: 16px;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
