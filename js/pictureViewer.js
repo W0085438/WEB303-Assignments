@@ -65,5 +65,5 @@ $(document).on('click', '.thumb', function(e){ // When a thumb is clicked on
 
 });
 
-// Final line runs once when rest of script has loaded to show the first image
-$('.thumb').eq(0).click();                // Simulate click on first thumb
+
+
