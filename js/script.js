@@ -15,6 +15,22 @@ $(function () {
 		$modal.append($content, $close);
 		});
 
+        $(function () {// Remove modal content from page and store in $content
+            $('.photo-viewer').show();
+            var $content = $('.photo-frame').detach();
+        
+            var modal = new Modal();
+            // Click handler calls open() method of modal object
+        
+            $('.photo-frame').on('click', function () {
+                modal.open({
+                    content: $content,
+                    width: 340,
+                    height: 300
+                });
+            });
+        });
+
     });
 });
 
