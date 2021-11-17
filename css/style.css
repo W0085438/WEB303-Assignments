@@ -1,4 +1,5 @@
-#london-wrapper, #windsor-wrapper{
+.modal {
+    position: absolute;
+    z-index: 1000;
     display: none;
-    height: 500px;
 }
