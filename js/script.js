@@ -26,10 +26,17 @@ $(document).ready(function() {
                           
                 $('#charlist').append(character);    
 		});	
-	$('#nSort').on('click', function() {
-			var nameText = [];
-			var names = nameText.push($('.name').text());
-			console.log(names);
+		
+		$('.charlist').each(function() {
+			var $table = $(this);
+			var $tbody = $table.find('tbody');
+			var $controls = $table.find('a');
+			var rows = $tbody.find('tr').toArray();
+		
+		$controls.on('click', function() {
+			var $anchor = $(this);
+			var order = $anchor.data('sort');
 	
 		});	
+	});
 });
