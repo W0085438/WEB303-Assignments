@@ -1,0 +1,64 @@
+{
+	"characters": [
+	{
+		"name": "Neo",
+		"birthdate": "1984-05-14",
+		"pill": "Red",
+		"sex": "Male"
+	},
+	{
+		"name": "Trinity",
+		"birthdate": "1983-08-11",
+		"pill": "Red",
+		"sex": "Female"
+	},
+	{
+		"name": "Morpheus",
+		"birthdate": "1971-02-08",
+		"pill": "Red",
+		"sex": "Male"
+	},
+	{
+		"name": "Cypher",
+		"birthdate": "1975-01-14",
+		"pill": "Red",
+		"sex": "Male"
+	},
+	{
+		"name": "Oracle",
+		"birthdate": "2031-07-10",
+		"pill": "NA",
+		"sex": "Unknown"
+	},
+	{
+		"name": "Apoc",
+		"birthdate": "2035-09-12",
+		"pill": "Red",
+		"sex": "Male"
+	},
+	{
+		"name": "Mouse",
+		"birthdate": "2037-05-08",
+		"pill": "Red",
+		"sex": "Male"
+	},
+	{
+		"name": "Tank",
+		"birthdate": "2037-06-18",
+		"pill": "NA",
+		"sex": "Male"
+	},
+	{
+		"name": "Dozer",
+		"birthdate": "2037-06-18",
+		"pill": "NA",
+		"sex": "Male"
+	},
+	{
+		"name": "Switch",
+		"birthdate": "1982-04-16",
+		"pill": "Red",
+		"sex": "Female"
+	}
+	]
+}
