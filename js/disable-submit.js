@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // The form
+    
   var userName = document.getElementById('username');    
   var submit = document.getElementById('submit'); 
   var terms = document.getElementById('terms');
@@ -40,17 +40,20 @@ $(document).ready(function(){
 			console.log("CHOOSE A COUNTRY!!");
 		
 		};
-		//var choose = document.getElementById(''); 
-		/* if(country.selectedIndex = 'sel'){
-			console.log("CHOOSE A COUNTRY!!");
-		} else {
-			console.log("YOU CHOSE A COUNTRY!!");
-		} */
+		
 		};
 		
 		$('#terms').on ('chk', function confirmTerms(){
 			console.log("HOORAH!!")
 		});
+		
+		(function() {
+			addEvent(form, 'submit', function(e) {
+				e.preventDefault();
+				var elements = this.elements;
+				var msg = 'Welcome ' + userName + 'The country code you selected is: ' + countryCode;
+			})
+		})
 
   
 });
