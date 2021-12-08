@@ -1,6 +1,7 @@
 $(document).ready(function(){
     
-  var userName = document.getElementById('username');    
+  var userName = document.getElementById('username');  
+  var pwd = document.getElementById('password');
   var submit = document.getElementById('submit'); 
   var terms = document.getElementById('terms');
   var submitted = false;                            
@@ -10,12 +11,18 @@ $(document).ready(function(){
  
 	 $('#username').on('input', function confirmUsername(){
 		if(userName.value != ""){
-			console.log("IT WORKZ!")
 			return true;
 		} else {
-			console.log("IT NO WORK!");
 			return false;
 		}
+	 });
+	 
+	 $('#password').on('input', function(){
+		 if(pwd.value.length >= 10){
+			 return true;
+		 } else {
+			 return false;
+		 }
 	 });
 	 
 	 $('#confirm').on('input', function confirmPwd() {
