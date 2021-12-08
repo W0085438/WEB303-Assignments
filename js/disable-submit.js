@@ -1,13 +1,24 @@
 $(document).ready(function(){
     // The form
-  var userName = document.getElementById('username');     // Username input
-  var submit = document.getElementById('submit');  // Submit button
-  var submitted = false;                            // Has form been submitted?
-  submit.disabled = true;                           // Disable submit button
-  submit.className = 'disabled';                    // Style submit button
+  var userName = document.getElementById('username');    
+  var submit = document.getElementById('submit'); 
+  var terms = document.getElementById('terms');
+  var submitted = false;                            
+  submit.disabled = true;                         
+  submit.className = 'disabled';                  
  
  
-	 $('#confirm').on('input', function() {
+	 $('#username').on('input', function confirmUsername(){
+		if(userName.value != ""){
+			console.log("IT WORKZ!")
+			return true;
+		} else {
+			console.log("IT NO WORK!");
+			return false;
+		}
+	 });
+	 
+	 $('#confirm').on('input', function confirmPwd() {
 		 var form = document.getElementById('testForm');
 		 var pwd = document.getElementById('password');
 		 var conf = document.getElementById('confirm');
@@ -24,8 +35,8 @@ $(document).ready(function(){
 		}
 		});
 		
-		function addEvent(country, change) { // Change select box
-		if (this.value === 'sel') { // No selection made
+		function addEvent(country, change) { 
+		if (this.value === 'sel') { 
 			console.log("CHOOSE A COUNTRY!!");
 		
 		};
@@ -35,14 +46,11 @@ $(document).ready(function(){
 		} else {
 			console.log("YOU CHOSE A COUNTRY!!");
 		} */
-	};
+		};
+		
+		$('#terms').on ('chk', function confirmTerms(){
+			console.log("HOORAH!!")
+		});
 
-  // On input: Check whether or not to enable the submit button
-  /* addEvent(userName, 'input', function (e) {         // On input of password
-    var target = e.target || e.srcElement;          // Target of event
-    submit.disabled = submitted || !target.value;   // Set disabled property
-    // If form has been submitted or username has no value set CSS to disabled
-    submit.className = (submitted || !target.value) ? 'disabled' : 'enabled';
-  }); */
   
 });
